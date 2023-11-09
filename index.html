@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <form class="form">
+        <fieldset>
+            <legend>Контактна інформація</legend>
+            <label for="name">Ім’я <em>*</em></label><input type="text" id="name">
+            <label for="email">E-mail</label><input type="email" id="email">
+            <label for="phone">Телефон</label><input type="tel" id="phone">
+            <label for="country">Країна</label><select id="country">
+                <option>Україна</option>
+                <option>Литва</option>
+                <option>Латвія</option>
+                <option>Польща</option>
+                <option>Великобританія</option>
+                <option>Угорщина</option>
+                <option>Румунія</option>
+                <option>Франція</option>
+                <option>Німеччина</option>
+                <option>Греція</option>
+                <option>Італія</option>
+                <option>Швеція</option>
+            </select>
+            <label for="txtarea">Повідомлення</label><textarea id="txtarea">Текстова область</textarea>
+            
+            <label>Хочете пограти у гру?</label>
+            <img src="./assets/img.webp"/>
+            <label class="checkbox">
+                Так
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">
+                Ні
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">
+                У мене немає вибору
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+            </label>
+        </fieldset>
+        <button type="submit">Відправити</button>
+    </form>    
 </body>
 </html>
